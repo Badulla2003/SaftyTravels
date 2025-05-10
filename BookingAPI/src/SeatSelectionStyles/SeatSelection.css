@@ -1,0 +1,214 @@
+.lowerDoubleSeatsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 82px;
+    column-gap: 6px;
+    row-gap: 3px;
+    height: fit-content;
+    /* margin: 5px;
+    padding: 5px; */
+
+}
+
+.upperDoubleSeatsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 87px;
+    column-gap: 3px;
+    row-gap: 3px;
+    height: fit-content;
+    /* margin: 5px;
+    padding: 5px; */
+}
+
+.lowerSingleSeatsDiv,
+.upperSingleSeatsDiv {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 40px;
+    row-gap: 3px;
+    height: fit-content;
+    /* margin: 5px;
+    padding: 5px; */
+
+}
+
+.lowerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    column-gap: 10px;
+    height: fit-content;
+}
+
+.upperDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    column-gap: 10px;
+    height: fit-content;
+}
+
+.lowerDiv1,
+.upperDiv1 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 160px;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+    padding: 2px;
+    height: fit-content;
+
+    h3 {
+        margin: 5px;
+        padding: 5px;
+
+    }
+}
+
+
+.sleeper {
+    height: 62px;
+}
+
+.seatsDiv {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.selected {
+    height: 40px;
+    border: 1px rgba(20, 84, 173, 0.66) ridge;
+    border-radius: 3px;
+    background-color: rgba(20, 84, 173, 0.66);
+    box-shadow: 0px 0px 2px rgba(20, 84, 173, 0.66);
+    cursor: pointer;
+    color: rgb(235, 237, 239);
+}
+
+.NotSelected {
+    height: 40px;
+    border: 1px rgb(197, 197, 211) ridge;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    color: green;
+
+}
+
+.NotSelectedSleeper {
+    height: 83px;
+    border: 1px rgb(197, 197, 211) ridge;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    color: green;
+
+}
+
+.selectedSleeper {
+    height: 83px;
+    border: 1px rgba(20, 173, 79, 0.66) ridge;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 3px;
+    background-color: rgba(20, 173, 79, 0.66);
+    cursor: pointer;
+    color: rgb(2, 17, 32);
+
+}
+
+.bookedSeaterNotSelected {
+    /* border: rgb(128, 126, 126) ridge; */
+    background-color: rgb(128, 126, 126);
+    border-radius: 3px;
+    border-width: 0px;
+    /* border-color:rgb(128, 126, 126); */
+    box-shadow: 0px 0px 2px rgb(128, 126, 126);
+    cursor: pointer;
+    color: rgb(86, 79, 79);
+    height: 40px;
+    /* border-color: white; */
+    pointer-events: none;
+}
+
+.bookedSleeperNotSelected {
+    /* border: rgb(128, 126, 126) ridge; */
+    background-color: rgb(128, 126, 126);
+    border-radius: 3px;
+    border-color: rgb(128, 126, 126);
+    cursor: pointer;
+    color: rgb(86, 79, 79);
+    height: 83px;
+    pointer-events: none;
+
+}
+
+.seatsDiv {
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+}
+
+.lowerDiv1,
+.upperDiv1 {
+    text-align: center;
+}
+
+
+.bookedSleeperNotSelectedSleeper {
+    background-color: rgb(128, 126, 126);
+    pointer-events: none;
+    border-radius: 3px;
+    border-color: rgb(128, 126, 126);
+    border-style: groove;
+    border-width: 1px;
+    color: rgb(86, 79, 79);
+    height: 83px;
+}
+
+.BDPointsDiv {
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px white ridge;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+  
+
+}
+
+.DPSelectionDiv,
+.BPSelectionDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.SBPoint,
+.BBPoint {
+    text-align: center;
+    width: 300px;
+    display: block;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+}
+
+#dbpCss,
+#sbpCss {
+    width: 200px;
+    height: 40px;
+    border: 1px white ridge;
+    box-shadow: 0px 0px 2px black;
+}

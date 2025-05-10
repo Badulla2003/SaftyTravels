@@ -1,0 +1,66 @@
+.busDetailsDiv{
+    display: block;
+    width: 600px;
+    height: fit-content;
+    border: 1px white groove;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+
+    .toDes{
+        text-transform: capitalize;
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+    
+  
+    .travelsName{
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 22px;
+        text-indent: 10px;
+       font-family:cursive ;
+       margin: 2px;
+       padding: 2px;
+    
+    }
+    .busType{
+        font-family: 'Courier New', Courier, monospace;
+            margin: 3px;
+            padding: 3px;
+    }
+    .startsAt{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 3px;
+        padding: 3px;
+    }
+    .travelsNameDiv{
+       text-transform: capitalize;
+       font-family: monospace;
+    }
+   .busDetails{
+      .busOld,.busNo{
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        width: fit-content;
+        text-indent: 30px;
+        
+      }
+   }
+}
+.date,.timing{
+    display: inline-block;
+    margin: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3px;
+    text-indent: 5px;
+}
+.busDetailsDiv:hover{
+  background-color: rgba(245, 245, 245, 0.737);
+  box-shadow: 0px 0px 4px black;
+}
+
