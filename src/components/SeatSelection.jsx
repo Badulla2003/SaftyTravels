@@ -153,7 +153,7 @@ export function SeatSelection() {
 
   }
 
-     const [pdPoints,setPdPoints]=useState();
+     const [pdPoints,setPdPoints]=useState({SBPoint:'',DBPoint:''});
      const getPDValues=(event)=>{
       const name=event.target.name;
       const value=event.target.value;
@@ -208,7 +208,7 @@ export function SeatSelection() {
           busId: bus.id
 
         }).catch((err) => console.log(err));
-      if (b != null) {
+      if (b != null ) {
         console.log(b);
         navigate('/seatBookedConfirm',{state:{ticketsData,bus,route,pdPoints}});
       }
