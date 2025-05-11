@@ -61,7 +61,7 @@
 
 
 
-.logineButton {
+/* .logineButton {
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.945);
     height: 40px;
@@ -73,12 +73,12 @@
     color: blue;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
-}
-.logineButton:hover
+} */
+/* .logineButton:hover
 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgba(36, 36, 188, 0.699);
     border: 1px white ridge;
     box-shadow: 0px 0px 2px black;
-}
+} */

@@ -1,0 +1,100 @@
+.ticketContainer {
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
+  box-sizing: border-box;
+}
+
+.ticketTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #3498db;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.ticketSection {
+  margin-bottom: 25px;
+}
+
+.ticketSection h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 5px;
+}
+
+.ticketRow {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ecf0f1;
+}
+
+.ticketRow span {
+  font-weight: 500;
+  color: #7f8c8d;
+}
+
+.ticketRow strong {
+  text-align: right;
+  color: #2c3e50;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.ticketPassenger {
+  background: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.footerNote {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* Print Styling */
+@media print {
+  .ticketContainer {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .printButton {
+    display: none;
+  }
+}
+.printButton {
+  margin: 20px auto;
+  display: block;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.printButton:hover {
+  background-color: #2c80b4;
+}

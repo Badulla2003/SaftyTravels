@@ -5,9 +5,9 @@ import './AddingBusToRoutePage.css';
 
 export function AddingBusToRoutePage() {
 
-    const [busInformation,setBusInformation]=useState();
-    const [startingPoint,setStartingPoint]=useState();
-    const [destinationPoint,setDestinationPoint]=useState();
+    const [busInformation, setBusInformation] = useState();
+    const [startingPoint, setStartingPoint] = useState();
+    const [destinationPoint, setDestinationPoint] = useState();
 
     const ding = async () => {
         // const busDetails = {
@@ -39,14 +39,15 @@ export function AddingBusToRoutePage() {
 
     }
 
-    const getValues=(event)=>{
-        const name=event.target.name;
-        const value=event.target.value;
-        setBusInformation((pre)=>({...pre,[name]:value}));
+    const getValues = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setBusInformation((pre) => ({ ...pre, [name]: value }));
     }
     console.log(busInformation)
 
-
+    const date = new Date();
+    const today = date.toISOString().substring(0, 10);
     return (
         <>
             <form action="">
@@ -55,12 +56,12 @@ export function AddingBusToRoutePage() {
                     <div className="placesInformationDiv">
                         <div>
                             <label htmlFor="startingPoint" className="labelText">Starting</label>
-                            <input type="text" name="startingPoint" className="inputBox" required onChange={(event)=>setStartingPoint(event.target.value)}/>
+                            <input type="text" name="startingPoint" className="inputBox" required onChange={(event) => setStartingPoint(event.target.value)} />
                         </div>
 
                         <div>
                             <label htmlFor="destinationPoint" className="labelText">Destination</label>
-                            <input type="text" name="destinationPoint" className="inputBox" required onChange={(event)=>setDestinationPoint(event.target.value)}/>
+                            <input type="text" name="destinationPoint" className="inputBox" required onChange={(event) => setDestinationPoint(event.target.value)} />
                         </div>
                     </div>
 
@@ -73,7 +74,7 @@ export function AddingBusToRoutePage() {
                             <div className="travelsInformation">
                                 <div>
                                     <label htmlFor="travelsName" className="labelText">Travels Name</label>
-                                    <input type="text" name="travelsName" className="inputBox" required onChange={getValues}/>
+                                    <input type="text" name="travelsName" className="inputBox" required onChange={getValues} />
                                 </div>
 
                                 <div>
@@ -83,17 +84,17 @@ export function AddingBusToRoutePage() {
 
                                 <div>
                                     <label htmlFor="costAt" className="labelText">Price @</label>
-                                    <input type="number" name="startsAt" className="inputBox" required onChange={getValues}/>
+                                    <input type="number" name="startsAt" className="inputBox" defaultValue="300" required onChange={getValues} />
                                 </div>
 
                                 <div>
                                     <label htmlFor="travelDate" className="labelText">Date</label>
-                                    <input type="date" name="travelDate" className="inputBox" required onChange={getValues}/>
+                                    <input type="date" name="travelDate" className="inputBox" required defaultValue={today} onChange={getValues} />
                                 </div>
 
                                 <div>
                                     <label htmlFor="startingTime" className="labelText">Starting Time</label>
-                                    <input type="time" name="stime" className="inputBox" required  onChange={getValues}/>
+                                    <input type="time" name="stime" className="inputBox" required onChange={getValues} />
                                 </div>
 
                                 <div>
@@ -112,7 +113,7 @@ export function AddingBusToRoutePage() {
 
                             <div>
                                 <label htmlFor="busNumber" className="labelText">Bus Number</label>
-                                <input type="text" name="busNumber" className="inputBox" required onChange={getValues}/>
+                                <input type="text" name="busNumber" className="inputBox" required onChange={getValues} />
                             </div>
 
                             <div>
@@ -126,27 +127,27 @@ export function AddingBusToRoutePage() {
 
                             <div>
                                 <label htmlFor="singleSeaters" className="labelText">Single-Seaters</label>
-                                <input type="number" name="singleSeaters" className="inputBox" required onChange={getValues}/>
+                                <input type="number" name="singleSeaters" className="inputBox" required defaultValue="10" onChange={getValues} />
                             </div>
 
                             <div>
                                 <label htmlFor="doubleSeaters" className="labelText">Double-Seaters</label>
-                                <input type="number" name="doubleSeaters" className="inputBox" required onChange={getValues}/>
+                                <input type="number" name="doubleSeaters" className="inputBox" required defaultValue="20" onChange={getValues} />
                             </div>
 
                             <div>
                                 <label htmlFor="singleSleeper" className="labelText">Single-Sleepers</label>
-                                <input type="number" name="singleSleepers" className="inputBox" required onChange={getValues}/>
+                                <input type="number" name="singleSleepers" className="inputBox" required defaultValue="5" onChange={getValues} />
                             </div>
 
                             <div>
                                 <label htmlFor="doubleSleeper" className="labelText">Double-Sleepers</label>
-                                <input type="number" name="doubleSleepers" className="inputBox" required onChange={getValues}/>
+                                <input type="number" name="doubleSleepers" className="inputBox" required defaultValue="10" onChange={getValues} />
                             </div>
 
                         </div>
                     </div>
-                    <input type="submit" name="formSubmit" className="formSubmit" onClick={ding}/>
+                    <input type="submit" name="formSubmit" className="formSubmit" onClick={ding} />
                 </div>
             </form>
         </>

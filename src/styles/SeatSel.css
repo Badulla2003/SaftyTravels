@@ -1,0 +1,213 @@
+/* Seat Selection Page */
+.seatsSelectionPageDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+ 
+}
+
+/* Seat Div Styling */
+.seatsDiv {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seat Selection Container */
+.seatSelectionDiv {
+    display: flex;
+    height: fit-content;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.seatSelectionDiv:hover {
+    transform: scale(1.05);
+}
+
+/* Bus and Passenger Information Section */
+.seatBusPassangerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    height: 490px;
+    margin: 5px;
+    padding: 20px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.seatBusPassangerDiv:hover {
+    transform: scale(1.03);
+}
+
+/* Ticket Details Section */
+.ticketDetailsDiv {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ticketDetailsDiv h2 {
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Book Button Styling */
+.bookButton {
+    width: 210px;
+    height: 50px;
+    background-color: #3f51b5;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bookButton:hover {
+    background-color: #536dfe;
+    transform: scale(1.05);
+}
+
+.bookButton:active {
+    background-color: #3f51b5;
+    transform: scale(0.98);
+}
+
+/* Seat No and Cost Layout */
+.seatNoCostDiv {
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.seatNoCostDiv:hover {
+    transform: scale(1.03);
+}
+
+/* Styling for Seat Name, Number, and Cost */
+.seatNoCostDiv .passName,
+.seatNoCostDiv .seatNo,
+.seatNoCostDiv .seatCost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 40px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+}
+
+/* Specific widths for seat name, number, and cost columns */
+.seatNoCostDiv .passName {
+    min-width: 300px;
+}
+
+.seatNoCostDiv .seatNo,
+.seatNoCostDiv .seatCost {
+    min-width: 130px;
+}
+
+/* Ticket List Layout */
+.tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Bus Details Section */
+.busDetailsDiv {
+    display: block;
+    width: 600px;
+    height: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #ffffff;
+}
+
+.busDetailsDiv:hover {
+    transform: translateY(-5px);
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bus Destination Styling */
+.busDetailsDiv .toDes {
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: #333;
+}
+
+/* Travels Name Styling */
+.busDetailsDiv .travelsName {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-indent: 10px;
+    font-family: cursive;
+    margin: 5px;
+    color: #444;
+}
+
+/* Bus Type Styling */
+.busDetailsDiv .busType {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    padding: 5px;
+    color: #666;
+}
+
+/* Start Time Styling */
+.busDetailsDiv .startsAt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    color: #444;
+}
+
+/* Date and Time Styling */
+.date,
+.timing {
+    display: inline-block;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    text-indent: 5px;
+    color: #444;
+}

@@ -1,5 +1,6 @@
 
-import '../styles/HomePage.css';
+// import '../styles/HomePage.css';
+import '../chatStyles/header.css'
 export function HeaderContent() {
 
     const date = new Date();

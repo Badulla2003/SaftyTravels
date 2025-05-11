@@ -43,6 +43,7 @@ export function BusesPage() {
                 </div>
 
                 <div className="busesListDiv">
+                     <div className="travelsNameDiv"><h2>{startingPoint} &#8594; {destinationPoint}</h2></div>
                     {
                         busData == ''
                             ?
@@ -59,12 +60,11 @@ export function BusesPage() {
                                     <>
                                         <div className="busConDiv">
                                             <div className="busDetailsDiv"  onClick={() => selectSeat(bus)}>
-                                                <div className="travelsNameDiv"><h2>{startingPoint} &#8594; {destinationPoint}</h2></div>
                                                 <div className="busDetails">
                                                     <div className="kingDiv">
                                                         <label className="travelsName">{bus.travelsName}</label>
                                                         <label className="busType">{bus.busType}</label>
-                                                        <label className="startsAt">Start@ {bus.stratsAt}</label>
+                                                        <label className="startsAt">Start@ {bus.startsAt}</label>
                                                     </div>
                                                     <div className="kingDiv">
                                                         <label className="busNo">{bus.busNumber} .</label>

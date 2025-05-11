@@ -3,14 +3,17 @@ import { useLocation, useNavigate } from "react-router-dom"
 import axiosRequest from "../axios";
 import { PassangerSelection } from "../SeatSelectionSubCompo/PassangerSelection";
 import { SeatSelectionSub } from "../SeatSelectionSubCompo/SeatSelectionSub";
-import '../SeatSelectionStyles/SeatSelectionPage.css';
-import '../SeatSelectionStyles/busDetailsDiv.css';
+// import '../SeatSelectionStyles/SeatSelectionPage.css';
+// import '../SeatSelectionStyles/busDetailsDiv.css';
+import '../styles/SeatSel.css'
 export function SeatSelection() {
   const location = useLocation();
   // const [seatData, setSeatData] = useState([]);
   const startingPoint = location.state.startingPoint;
   const destinationPoint = location.state.destinationPoint;
   const bus = location.state.bus || '';
+
+  const route={startingPoint,destinationPoint};
 
   for (let i = 0; i < 5; i++) {
     console.log("id :", bus.id);
@@ -150,6 +153,12 @@ export function SeatSelection() {
 
   }
 
+     const [pdPoints,setPdPoints]=useState();
+     const getPDValues=(event)=>{
+      const name=event.target.name;
+      const value=event.target.value;
+      setPdPoints((pre)=>({...pre,[name]:value}));
+     }
 
   /*
   
@@ -201,11 +210,13 @@ export function SeatSelection() {
         }).catch((err) => console.log(err));
       if (b != null) {
         console.log(b);
-        navigate('/seatBookedConfirm');
+        navigate('/seatBookedConfirm',{state:{ticketsData,bus,route,pdPoints}});
       }
 
     }
   }
+
+  console.log(pdPoints,"  points")
 
   return (
     <>
@@ -329,7 +340,7 @@ export function SeatSelection() {
           <div className="BDPointsDiv">
             <div className="BPSelectionDiv">
               <label htmlFor="SBPoint" className="SBPoint">Selact Boarding Point</label>
-              <select name="SBPoint" id="sbpCss">
+              <select name="SBPoint" id="sbpCss" onChange={getPDValues}>
                 <option value="Ameerpet">Ameerpet</option>
                 <option value="Kacheguda">Kacheguda</option>
               </select>
@@ -337,7 +348,7 @@ export function SeatSelection() {
 
             <div className="DPSelectionDiv">
               <label htmlFor="DBPoint" className="SBPoint">Selact Boarding Point</label>
-              <select name="DBPoint" id="dbpCss" >
+              <select name="DBPoint" id="dbpCss"onChange={getPDValues} >
                 <option value="Ameerpet">Ameerpet</option>
                 <option value="Kacheguda">Kacheguda</option>
               </select>
