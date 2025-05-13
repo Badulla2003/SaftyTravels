@@ -230,7 +230,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgb(167, 167, 210);
+    /* background-color: rgb(167, 167, 210); */
     border-radius: 10px;
     
 }

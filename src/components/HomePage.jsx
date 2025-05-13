@@ -19,7 +19,7 @@ export function HomePage() {
     const [destination, setDestination] = useState("Destination place");
 
     useEffect(() => {
-        if (points.startingPoint && points.destinationPoint) {
+        if (points.startingPoint || points.destinationPoint) {
             const s = imagesData.find((img) => img.name.toLowerCase() === points.startingPoint.toLowerCase());
             const d = imagesData.find((img) => img.name.toLowerCase() === points.destinationPoint.toLowerCase());
 
