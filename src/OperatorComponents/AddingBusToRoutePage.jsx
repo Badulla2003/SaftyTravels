@@ -9,6 +9,10 @@ export function AddingBusToRoutePage() {
     const [startingPoint, setStartingPoint] = useState();
     const [destinationPoint, setDestinationPoint] = useState();
 
+    // useEffect(async()=>{
+    //   const data=axiosRequest.get('/sayHi').then((res)=>console.log(res)).catch((err)=>console.log(err));
+    // },[])
+
     const ding = async () => {
         // const busDetails = {
         //     busNumber: 1234,
@@ -30,7 +34,6 @@ export function AddingBusToRoutePage() {
                 startingPoint: startingPoint,
                 destinationPoint: destinationPoint
             }
-
 
         ).then((res) => console.log(res)).catch((err) => console.log(err));
 
