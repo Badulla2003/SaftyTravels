@@ -9,7 +9,7 @@ export function SeatSelectionSub() {
     const [selectedSeats, setSelectedSeats] = useState([]);
 
     useEffect(() => {
-        getSeatsData();
+        getSeatsData()
 
     }, [])
 
