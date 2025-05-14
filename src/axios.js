@@ -7,4 +7,4 @@ const axiosRequest = axios.create({
       'Content-Type': 'application/json', // Set the default content type for requests
     },
   });
-export default axiosRequest;
+export default axiosRequest
