@@ -12,7 +12,7 @@ export function PassangerSelection() {
         const name = event.target.name;
         const value = event.target.value;
         setCustomer((pre) => ({ ...pre, [name]: value }));
-        p.current = customer;
+        p.current = customer
     }
 
  
