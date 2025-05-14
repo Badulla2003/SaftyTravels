@@ -9,7 +9,8 @@ export function SeatSelectionSub() {
     const [selectedSeats, setSelectedSeats] = useState([]);
 
     useEffect(() => {
-        getSeatsData()
+        getSeatsData();
+
 
     }, [])
 
@@ -21,6 +22,7 @@ export function SeatSelectionSub() {
             }
         })
             .then((data) => setSeatData(data.data))
+
             .catch((err) => console.log(err))
 
     }
