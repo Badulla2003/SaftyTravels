@@ -21,7 +21,7 @@ export function SeatSelectionSub() {
             }
         })
             .then((data) => setSeatData(data.data))
-            .catch((err) => console.log(err));
+            .catch((err) => console.log(err))
 
     }
 
