@@ -1,0 +1,129 @@
+.seatsSelectionPageDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    width: 100%;
+    
+    /* background-color: rgb(222, 215, 215); */
+}
+.seatsDiv{
+    margin: 0px;
+    padding: 0px;
+}
+
+.seatSelectionDiv {
+    /* background-color: salmon; */
+    display: flex;
+    height: fit-content;
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 1px white ridge; */
+    /* margin: 5px;
+    padding: 10px; */
+    /* box-shadow: 0px 0px 2px black; */
+}
+
+.seatBusPassangerDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    overflow: scroll;
+    height: 500px;
+    margin: 5px;
+    padding: 10px;
+    scrollbar-width: none;
+    /* border: 1px white ridge; */
+    /* box-shadow: 0px 0px 2px black; */
+}
+
+.passangerSelectionDiv {
+    /* background-color: rgb(13, 238, 47); */
+}
+
+.ticketDetailsDiv {
+
+    /* background-color: antiquewhite; */
+    h2 {
+        text-transform: capitalize;
+        margin: 10px;
+        padding: 10px;
+        font-family: 'Courier New', Courier, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+/* div{
+    margin: 10px;
+    padding: 10px;
+} */
+.bookButton {
+    width: 210px;
+    height: 50px;
+    background-color: rgba(18, 18, 239, 0.756);
+    border: 2px white ridge;
+    box-shadow: 0px 0px 10px rgba(9, 9, 236, 0.756)k;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bookButton :hover {
+    background-color: white;
+}
+
+.seatNoCostDiv {
+    display: flex;
+    border: 1px white ridge;
+    margin: 5px;
+    padding: 3px;
+    width: fit-content;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+
+    .passName {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 300px;
+        font-size: large;
+        height: 30px;
+        text-transform: capitalize;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+    .seatNo,.seatCost{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 130px;
+        font-size: large;
+        height: 30px;
+        text-transform: capitalize;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.ticketDetailsDiv{
+    margin: 5px;
+    padding: 5px;
+    border: 1px white ridge;
+    box-shadow: 0px 0px 2px black;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.tickets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+}

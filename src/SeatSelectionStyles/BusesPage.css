@@ -1,0 +1,84 @@
+.busesPageDiv {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 1px;
+    padding: 1px;
+    /* border: 1px white ridge; */
+    border-radius: 2px;
+    /* box-shadow: 0px 0px 2px black; */
+    overflow: auto;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.sDImgsDiv {
+    display: flex;
+    /* margin: 5px;
+    padding: 5px; */
+}
+
+.busesListDiv {
+    display: flex;
+    width: fit-content;
+    height:500px;
+    overflow: auto;
+    scrollbar-width: none;
+    flex-direction: column;
+}
+
+.busConDiv {
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    padding: 5px;
+
+}
+.kingDiv{
+  
+}
+
+
+
+.NoDataDiv {
+
+    min-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 10px;
+        padding: 10px;
+        width: fit-content;
+        color: red;
+    }
+}
+
+
+
+/* .logineButton {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.945);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 2px;
+    font-weight: 900;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+} */
+/* .logineButton:hover
+{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(36, 36, 188, 0.699);
+    border: 1px white ridge;
+    box-shadow: 0px 0px 2px black;
+} */

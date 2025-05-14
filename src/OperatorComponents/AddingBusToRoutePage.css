@@ -1,0 +1,105 @@
+.busDataDive{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+  
+}
+input{
+    text-transform: capitalize;
+    text-indent: 2px;
+    letter-spacing: 1px;
+}
+.placesInformationDiv{
+    display: flex;
+    column-gap: 30px;
+    input{
+        width: 200px;
+        height: 24px;
+        margin: 2px;
+        padding: 2px;   
+    }
+    label{
+        display: inline-flex;
+        width: 150px;
+        margin: 2px;
+        padding: 2px;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    }
+}
+
+.travelsInformationDive{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    label{
+        display: inline-block;
+        width: 150px;
+        font-size: large;
+        padding: 2ppx;
+        margin: 2px;
+
+    }
+    input[type="text"],input[type="number"]{
+        width: 200px;
+        height: 24px;
+       
+        margin: 2px;
+        padding: 2px;
+    }
+    input[type="date"]{
+        width: 150px;
+        font-size: 15px;
+        letter-spacing: 2px;   
+    }
+    input[type="time"]{
+        margin: 2px;
+        padding: 2px;
+    }
+}
+.travelsInformation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tbDiv{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    input[type="text"],input[type="number"]{
+        width: 200px;
+        height: 24px;
+     
+        margin: 2px;
+        padding: 2px;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        font-size: large;
+        padding: 2ppx;
+        margin: 2px;
+
+    }
+    select{
+        width: 205px;
+        margin: 2px;
+        padding: 2px;
+        height: 25px;
+    }
+}
+.formSubmit{
+    width: 300px;
+    height: 50px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px green ridge;
+    cursor: pointer;
+}

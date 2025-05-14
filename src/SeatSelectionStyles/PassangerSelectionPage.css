@@ -1,0 +1,161 @@
+.passangerRegisterDiv {
+    margin: 10px;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px white ridge;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    h1{
+        font-family: cursive;
+        color: blue;
+    }
+
+    label {
+        font-size: 18px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: inline-block;
+        width: 70px;
+        margin: 2px;
+        padding: 2px;
+        text-transform: capitalize;
+        color: rgb(123, 121, 121);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    input {
+        height: 30px;
+        width: 300px;
+        border: 1px white ridge;
+        box-shadow: 0px 0px 2px black;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 2px;
+        font-size: 18px;
+        text-indent: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .saveButton {
+        display: block;
+        margin: 5px;
+        padding: 2px;
+        height: 40px;
+        width: 370px;
+        background-color: rgb(72, 255, 0);
+        box-shadow: 0px 0px 2px black;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: blue;
+
+    }
+}
+
+.passangersSelectionDiv {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 400px;
+
+
+}
+
+.passangersDetailsDiv {
+    display: block;
+    width: 600px;
+    border: 1px white groove;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffffde;
+    h3 {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 10px;
+        padding: 5px;
+    }
+
+}
+
+.passangerDiv {
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.passangerName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family: monospace;
+    border: 1px white groove;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+    letter-spacing: 3px;
+    width: 60%;
+    cursor: pointer;
+
+
+}
+.passangerNameUnClicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px rgb(88, 78, 78) groove;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(102, 250, 2);
+    letter-spacing: 3px;
+    width: 60%;
+    background-color: rgb(37, 247, 4);
+    cursor: pointer;
+ 
+}
+
+.selectButton {
+    width: 20%;
+    height: 30px;
+    background-color: rgba(0, 89, 255, 0.902);
+    color: rgb(236, 245, 236);
+    cursor: pointer;
+    border: 1px blue groove;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.deleteButton {
+    width: 20%;
+    height: 30px;
+    background-color: rgba(0, 89, 255, 0.902);
+    color: rgb(250, 248, 248);
+    cursor: pointer;
+    border: 1px blue groove;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.addButton {
+    height: 30px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.769);
+    border: 1px rgb(245, 244, 244) ridge;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: green;
+    font-family: cursive;
+}
+
+

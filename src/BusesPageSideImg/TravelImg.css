@@ -1,0 +1,23 @@
+.travelsImgDiv{
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    row-gap: 10px;
+}
+.startingImgDiv{
+    margin: 2px;
+    padding: 2px;
+}
+.destinationImgDiv{
+    margin: 2px;
+    padding: 2px;
+}
+.startingImg,.destinationImg{
+    width: 400px;
+    height: 200px;
+    margin: 3px;
+    padding: 2px;
+    /* border: 1px white ridge; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+}
