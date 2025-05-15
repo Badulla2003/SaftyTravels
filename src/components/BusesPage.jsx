@@ -10,27 +10,31 @@ export function BusesPage() {
     const [busData, setBusData] = useState([]);
     const points = location.state.points || {};
 
-    const tDate=location.state.tDate;
+    const tDate = location.state.tDate;
 
     const startingPoint = points.startingPoint;
     const destinationPoint = points.destinationPoint;
 
-    useEffect(() => {
+    function getBusesData() {
         axiosRequest.get("/getBusData", {
             params: {
                 startingPoint: startingPoint,
                 destinationPoint: destinationPoint,
-                travelsDate:tDate
+                travelsDate: tDate
             }
         }).then((data) => setBusData(data.data))
             .catch((err) => console.log(err))
+    }
+
+    useEffect(() => {
+        getBusesData();
     }, [])
 
 
     console.log(busData)
 
     const selectSeat = (bus) => {
-     //   console.log("bus Id :", bus.busId);
+        //   console.log("bus Id :", bus.busId);
         navigate('/goToBusSeatsPage', { state: { bus, startingPoint, destinationPoint } });
     }
 
@@ -43,7 +47,7 @@ export function BusesPage() {
                 </div>
 
                 <div className="busesListDiv">
-                     <div className="travelsNameDiv"><h2>{startingPoint} &#8594; {destinationPoint}</h2></div>
+                    <div className="travelsNameDiv"><h2>{startingPoint} &#8594; {destinationPoint}</h2></div>
                     {
                         busData == ''
                             ?
@@ -59,7 +63,7 @@ export function BusesPage() {
 
                                     <>
                                         <div className="busConDiv">
-                                            <div className="busDetailsDiv"  onClick={() => selectSeat(bus)}>
+                                            <div className="busDetailsDiv" onClick={() => selectSeat(bus)}>
                                                 <div className="busDetails">
                                                     <div className="kingDiv">
                                                         <label className="travelsName">{bus.travelsName}</label>
@@ -87,7 +91,7 @@ export function BusesPage() {
                 </div>
             </div>
         </>
-      
+
     )
 }
 

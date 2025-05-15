@@ -28,16 +28,19 @@ export function AddingBusToRoutePage() {
         //     startsAt: 11,
         //     travelDate: "2024-03-02"
         // }
-        const deal = await axiosRequest.post('/addBusToRoute',
+           console.log("clicked");
+        await axiosRequest.post('/addBusToRoute',
             {
                 busDetails: busInformation,
                 startingPoint: startingPoint,
                 destinationPoint: destinationPoint
             }
 
-        ).then((res) => console.log(res)).catch((err) => console.log(err));
+        ).then((res)=>console.log(res)).catch((err) => console.log(err));
+        
+     
 
-        console.log(busInformation);
+      
 
 
     }
@@ -47,7 +50,6 @@ export function AddingBusToRoutePage() {
         const value = event.target.value;
         setBusInformation((pre) => ({ ...pre, [name]: value }));
     }
-    console.log(busInformation)
 
     const date = new Date();
     const today = date.toISOString().substring(0, 10);
@@ -150,7 +152,7 @@ export function AddingBusToRoutePage() {
 
                         </div>
                     </div>
-                    <input type="submit" name="formSubmit" className="formSubmit" onClick={ding} />
+                    <input type="submit" name="formSubmit" className="formSubmit" onClick={()=>ding()} />
                 </div>
             </form>
         </>

@@ -1,6 +1,7 @@
 .busesPageDiv {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: fit-content;
     margin: 1px;
     padding: 1px;
